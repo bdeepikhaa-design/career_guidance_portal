@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance Portal - Home</title>
+    
+
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            width: 100%;
+            background: #ff758c;
+            padding: 15px 0;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 18px;
+        }
+
+        .container {
+            background: #fff;
+            width: 90%;
+            max-width: 500px;
+            margin-top: 30px;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h2 {
+            color: #ff577f;
+        }
+
+        p {
+            color: #444;
+            font-size: 16px;
+        }
+
+        .btn {
+            display: block;
+            width: 80%;
+            margin: 15px auto;
+            padding: 12px;
+            background: #ff758c;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff577f;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 10px;
+            text-align: center;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+   
+
+    <div class="navbar">
+        CareerPath by Deepikhaa 🌸
+    </div>
+    
+
+
+    <div class="container">
+        <h2>Welcome, {{ name }}!</h2>
+        <p>School: {{ school }}</p>
+        <p>Discover your strengths and find the right career after 10th grade 💫</p>
+
+        <button class="btn" onclick="location.href='/quiz'">Start Career Quiz</button>
+        <button class="btn" onclick="location.href='/career_paths'">View Career Path Tree</button>
+        <button class="btn" onclick="location.href='/career_guidance'">Career Guidance</button>
+    </div>
+
+    <footer>
+        Made with 💖 by Deepikhaa
+    </footer>
+</body>
+</html>

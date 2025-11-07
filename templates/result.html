@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Career Result</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 40px 50px;
+            max-width: 600px;
+            animation: popUp 0.8s ease;
+        }
+
+        @keyframes popUp {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        h1 {
+            color: #3a3a3a;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .result-text {
+            font-size: 18px;
+            color: #333;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+
+        .btns {
+            margin-top: 25px;
+        }
+
+        .btn {
+            background-color: #ff758c;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background-color: #ff5274;
+        }
+
+        footer {
+            margin-top: 20px;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>🌟 Your Ideal Career Path 🌟</h1>
+        <div class="result-text">{{ result }}</div>
+
+        <div class="btns">
+            <button class="btn" onclick="window.location.href='/quiz'">🧠 Try Again</button>
+            <button class="btn" onclick="window.location.href='/career_paths'">🌿 Explore Career Paths</button>
+        </div>
+    </div>
+
+    <footer>Made with 💖 by Deepikhaa’s Career Portal</footer>
+</body>
+</html>
